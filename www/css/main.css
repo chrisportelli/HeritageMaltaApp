@@ -1,15 +1,15 @@
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/OpenSans.woff2) format('woff2');
+@font-face{
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/OpenSans.woff2) format('woff2');
 }
 
-@font-face {
-  font-family: 'Open Sans Bold';
-  font-style: normal;
-  font-weight: 700;
-  src: url(../fonts/OpenSansBold.woff2) format('woff2');
+@font-face{
+	font-family: 'Open Sans Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/OpenSansBold.woff2) format('woff2');
 }
 
 *{
@@ -44,8 +44,8 @@ body{
 
 #menu_slider{
 	margin: 1.5em;
-    overflow-x: auto;
-    overflow-y: hidden;
+		overflow-x: auto;
+		overflow-y: hidden;
 	white-space: nowrap;
 }
 
@@ -62,12 +62,12 @@ body{
 	height: 100%;
 	/*background: rgba(0,0,0,0.3);*/
 	position: relative;
-	background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -moz-linear-gradient(left,	rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
-	background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+	background: -webkit-linear-gradient(left,	rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,	rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,	rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,	rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
 }
 
 #menu_slider .box .text{
@@ -91,14 +91,66 @@ body{
 	text-align: left;
 }
 
-#menu_slider .box.historyartifacts{
+#menu_slider .box.history{
 	background: url(../img/history_artifacts.png) no-repeat;
 	background-size: cover;
 }
 
+#menu_slider .box.timeline{
+	background: url(../img/timeline.png) no-repeat;
+	background-size: cover;
+}
+
+#nav-toggle{
+	cursor: pointer;
+	padding: 10px 35px 16px 0px;
+	position: absolute;
+	top: 2em;
+	left: 1.5em;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after{
+	cursor: pointer;
+	border-radius: 1px;
+	height: 5px;
+	width: 35px;
+	background: white;
+	position: absolute;
+	display: block;
+	content: '';
+}
+
+#nav-toggle span:before{
+	top: -10px; 
+}
+
+#nav-toggle span:after{
+	bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after{
+	transition: all 500ms ease-in-out;
+}
+
+#nav-toggle.active span{
+	background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after{
+	top: 0;
+}
+
+#nav-toggle.active span:before{
+	transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after{
+	transform: rotate(-45deg);
+}
+
 /* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    #top {
+@media screen and (min-aspect-ratio: 1/1) and (min-width:300px){
+	#top{
 		height: 450px;
 		background-size: cover;
 		background-position: 50% 35%;
@@ -107,5 +159,9 @@ body{
 	#top h1{
 		padding-left: 0.8em;
 		font-size: 4.4em;
+	}
+	
+	#nav-toggle{
+		left: 3.4em;
 	}
 }
