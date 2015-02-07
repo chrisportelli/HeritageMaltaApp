@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/OpenSans.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/OpenSansBold.woff2) format('woff2');
+}
+
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background-color: #fff;
+}
+
+#top{
+	background: url(../img/home.png) no-repeat center top;
+	height: 420px;
+	position: relative;
+}
+
+#top h1{
+	text-transform: none;
+	color: #fff;
+	text-align: left;
+	padding-left: 0.4em;
+	position: absolute;
+	left: 0;
+	bottom: 0.5em;
+	font-size: 3.8em;
+}
+
+#top h1 div{
+	font-weight: 700;
+	margin-top: -8px;
+}
+
+#menu_slider{
+	margin: 1.5em;
+    overflow-x: auto;
+    overflow-y: hidden;
+	white-space: nowrap;
+}
+
+#menu_slider .box{
+	width: 14.5em;
+	height: 14.5em;
+	margin-right: 2em;
+	color: #fff;
+	display: inline-block;
+}
+
+#menu_slider .box .black_transparency{
+	width: 100%;
+	height: 100%;
+	/*background: rgba(0,0,0,0.3);*/
+	position: relative;
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+}
+
+#menu_slider .box .text{
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+}
+
+#menu_slider .box .text h1{
+	font-size: 1.5em;
+	margin-bottom: 0.2em;
+	text-transform: uppercase;
+}
+
+#menu_slider .box .text p{
+	margin: 0;
+	white-space: normal;
+}
+
+#menu_slider .box h1, #menu_slider .box p{
+	text-align: left;
+}
+
+#menu_slider .box.historyartifacts{
+	background: url(../img/history_artifacts.png) no-repeat;
+	background-size: cover;
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    #top {
+		height: 450px;
+		background-size: cover;
+		background-position: 50% 35%;
+	}
+	
+	#top h1{
+		padding-left: 0.8em;
+		font-size: 4.4em;
+	}
+}
