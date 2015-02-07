@@ -44,17 +44,17 @@ body{
 
 #menu_slider{
 	margin: 1.5em;
-		overflow-x: auto;
-		overflow-y: hidden;
+	overflow-x: auto;
+	overflow-y: hidden;
 	white-space: nowrap;
 }
 
 #menu_slider .box{
-	width: 14.5em;
-	height: 14.5em;
 	margin-right: 2em;
 	color: #fff;
 	display: inline-block;
+	width: 14em;
+	height: 14em;
 }
 
 #menu_slider .box .black_transparency{
@@ -62,12 +62,12 @@ body{
 	height: 100%;
 	/*background: rgba(0,0,0,0.3);*/
 	position: relative;
-	background: -moz-linear-gradient(left,	rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,	rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left,	rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left,	rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
-	background: linear-gradient(to right,	rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+	background: -moz-linear-gradient(left,	rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
+	background: -webkit-linear-gradient(left,	rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(left,	rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: -ms-linear-gradient(left,	rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to right,	rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
 }
 
 #menu_slider .box .text{
@@ -77,7 +77,7 @@ body{
 }
 
 #menu_slider .box .text h1{
-	font-size: 1.5em;
+	font-size: 1.2em;
 	margin-bottom: 0.2em;
 	text-transform: uppercase;
 }
@@ -85,6 +85,7 @@ body{
 #menu_slider .box .text p{
 	margin: 0;
 	white-space: normal;
+	font-size: 1em;
 }
 
 #menu_slider .box h1, #menu_slider .box p{
@@ -163,5 +164,18 @@ body{
 	
 	#nav-toggle{
 		left: 3.4em;
+	}
+	
+	#menu_slider .box{
+		width: 16em;
+		height: 16em;
+	}
+	
+	#menu_slider .box .text h1{
+		font-size: 2em;
+	}
+	
+	#menu_slider .box .text p{
+		font-size: 1.2em;
 	}
 }
