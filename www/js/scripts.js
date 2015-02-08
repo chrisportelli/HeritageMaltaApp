@@ -4,6 +4,16 @@ $("#nav-toggle").click(function(e){
     //$(this).toggleClass("active");
 });
 
+$("ul#tickets-main-options li").click(function(){
+	var a = $(this).attr("rel");
+	$("#"+a).slideToggle();
+});
+
+$("li#opt1").click(function(){
+	$(".detailed-option").hide();
+	$(".chosen-option-calendar").animate({width:'toggle'},350);
+});
+
 window.onload = function(){
 
 	var imageSrc = document

@@ -575,7 +575,7 @@ hr.white{
 	margin-bottom: 1em;
 }
 
-#today-events-tiles .box.last{
+#today-events-tiles .box:last-child{
 	margin-bottom: 0;
 }
 
@@ -585,6 +585,70 @@ ul#tickets-main-options{
 	padding: 0;
 }
 
+ul#tickets-main-options>li{
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	margin-bottom: 1.2em;
+	border-bottom: 1px solid #b9b9b9;
+}
+
+ul#tickets-main-options>li:first-child{
+	margin-top: 1em;
+}
+
+ul#tickets-main-options li:last-child{
+	margin-bottom: 1em;
+}
+
+ul#tickets-main-options .detailed-option{
+	display: none;
+	text-align: center;
+	margin-bottom: 1em;
+	overflow: auto;
+	border-bottom: 1px solid #b9b9b9;
+	padding-bottom: 1.5em;
+}
+
+ul#tickets-main-options .detailed-option h2{
+	color: #000;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+ul#tickets-main-options .detailed-option ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul#tickets-main-options .detailed-option ul li{
+	font-size: 1.15em;
+	line-height: 1.8em
+}
+
+ul#tickets-main-options .detailed-option .circle{
+	border-radius: 50%;
+	width: 6px;
+	height: 6px;
+	background-color: #c68889;
+	display: inline-block;
+	margin-right: 0.6em;
+}
+
+ul#tickets-main-options .detailed-option .circle.active{
+	background-color: #6c1a28;
+}
+
+ul#tickets-main-options .detailed-option .circle:last-child{
+	margin-right: 0;
+}
+
+ul#tickets-main-options .chosen-option-calendar{
+	display: none;
+}
+	
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:300px){
     #top{
@@ -634,5 +698,9 @@ ul#tickets-main-options{
 	#today-events-tiles .box{
 		background-position: 50% !important;
 		margin-bottom: 2em;
+	}
+	
+	ul#tickets-main-options li{
+		font-size: 1.5em;
 	}
 }
