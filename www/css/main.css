@@ -130,8 +130,8 @@ h1{
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after{
     cursor: pointer;
     border-radius: 1px;
-    height: 5px;
-    width: 30px;
+    height: 4px;
+    width: 25px;
     background: white;
     position: absolute;
     display: block;
@@ -139,11 +139,11 @@ h1{
 }
 
 #nav-toggle span:before{
-    top: -10px; 
+    top: -8px; 
 }
 
 #nav-toggle span:after{
-    bottom: -10px;
+    bottom: -8px;
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after{
@@ -442,13 +442,26 @@ body.toggled #sidebar{
 	padding-left: 30px;
 }
 
-#profile-giftstore{
+#bottom-red-message{
 	margin-top: 1em;
 	background-color: #ae1215;
 	color: #fff;
 	font-size: 1.3em;
 	text-align: center;
 	padding: 0.8em 0;
+}
+
+#bottom-red-message h1{
+	font-weight: bold;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#bottom-red-message h2{
+	margin: 0;
+	font-size: 0.85em;
+	font-weight: normal;
 }
 
 .two-col{
@@ -459,6 +472,36 @@ body.toggled #sidebar{
 .two-col .col{
 	float: left;
 	width: 50%;
+}
+
+#red{
+	background: #ae1215;
+}
+
+.wrapper{
+	padding: 1em 1.5em;
+}
+
+.wrapper h1{
+	color: #fff;
+	font-size: 1.65em;
+	font-weight: bold;
+}
+
+.wrapper h1.top-spacer{
+	margin-top: 2.4em;
+}
+
+.wrapper h2{
+	margin: 0.4em 0 1em;
+	color: #fff;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+h2.white{
+	height: 2px;
+	background-color: #fff;
 }
 
 /* Landscape layout (with min-width) */
