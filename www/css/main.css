@@ -38,7 +38,7 @@ h1{
 
 #top{
     background: url(../img/home.png) no-repeat center top;
-	background-size: cover;
+    background-size: cover;
     height: 60%;
     position: relative;
 }
@@ -72,7 +72,7 @@ h1{
     display: inline-block;
     width: 14em;
     height: 14em;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 
 .box .black-transparency{
@@ -120,9 +120,9 @@ h1{
     background-size: cover;
 }
 
-#today-events-tiles .box{
-	width: 100%;
-	display: block;
+#list-tiles .box{
+    width: 100%;
+    display: block;
 }
 
 #nav-toggle{
@@ -302,17 +302,17 @@ body.toggled #sidebar{
 }
 
 #profile-options{
-	margin: 1em auto;
-	text-align: center;
+    margin: 1em auto;
+    text-align: center;
 }
 
 #profile-options .tile{
     background-color: #ae1215;
     border: 1px solid #ea6461;
     height: 45px;
-	font-size: 1.2em;
-	display: inline-block;
-	width: 6em;
+    font-size: 1.2em;
+    display: inline-block;
+    width: 6em;
 }
 
 #profile-options .tile.active{
@@ -324,75 +324,75 @@ body.toggled #sidebar{
 }
 
 #profile-options .tile > div{
-	height: inherit;
+    height: inherit;
 }
 
 #profile-options .tile .photos{
-	background: url(../img/icons/images.png) no-repeat;
+    background: url(../img/icons/images.png) no-repeat;
     background-size: 35px;
-	background-position: 50%;
+    background-position: 50%;
 }
 
 #profile-options .tile .threeD{
-	background: url(../img/icons/3d.png) no-repeat;
+    background: url(../img/icons/3d.png) no-repeat;
     background-size: 35px;
-	background-position: 50%;
+    background-position: 50%;
 }
 
 #profile-options .tile .map{
-	background: url(../img/icons/map.png) no-repeat;
+    background: url(../img/icons/map.png) no-repeat;
     background-size: 35px;
-	background-position: 50%;
+    background-position: 50%;
 }
 
 #profile-options .tile span{
-	display: none;
+    display: none;
 }
 
 #profile-description hr{
-	border: 0;
+    border: 0;
     height: 1px;
     background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
     background-image: -moz-linear-gradient(left, #ccc, #333, #ccc); 
     background-image: -ms-linear-gradient(left, #ccc, #333, #ccc); 
     background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
-	margin: 1.5em 0;
+    margin: 1.5em 0;
 }
 
 #profile-description{
-	padding: 0 1em;
+    padding: 0 1em;
 }
 
 #profile-description h2{
-	color: #b9b9b9;
-	font-weight: normal;
-	margin-bottom: 0;
-	font-size: 1.25em;
+    color: #b9b9b9;
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 1.25em;
 }
 
 #profile-description p.focus{
-	font-size: 1.4em;
-	margin: 0;
-	margin-top: 0.2em;
-	font-weight: bold;
+    font-size: 1.4em;
+    margin: 0;
+    margin-top: 0.2em;
+    font-weight: bold;
 }
 
 #profile-description p.content{
-	font-size: 1.2em;
-	line-height: 1.8;
-	margin-top: 1.4em;
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-top: 1.4em;
 }
 
 #profile-timeline{
-	margin: 1em 0 2em;
-	overflow: auto;
+    margin: 1em 0 2em;
+    overflow: auto;
 }
 
 #profile-timeline ul.intervals-header, #profile-timeline ul.intervals {
     list-style-type: none;
     padding: 0;
     display: block;
-	overflow: auto;
+    overflow: auto;
 }
 
 #profile-timeline ul.intervals li, #profile-timeline ul.intervals-header li{
@@ -408,17 +408,17 @@ body.toggled #sidebar{
 }
 
 #profile-timeline ul.intervals{
-	margin-top: 0;
-	margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #profile-timeline ul.intervals-header{
-	margin: 0;
+    margin: 0;
 }
 
 #profile-timeline ul.intervals-header li{
-	border-right: 0;
-	padding: 3px 0;
+    border-right: 0;
+    padding: 3px 0;
 }
 
 #profile-timeline ul.intervals li:last-child {
@@ -426,166 +426,271 @@ body.toggled #sidebar{
 }
 
 #profile-timeline .arrow{
-	width: 0; 
-	height: 0; 
-	border-left: 12px solid transparent;
-	border-right: 12px solid transparent;
-	border-top: 12px solid #ae1215;
-	margin: 0 auto;
+    width: 0; 
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #ae1215;
+    margin: 0 auto;
 }
 
 #share-button{
-	margin-top: 2em;
-	padding: 0.8em 0;
-	text-align: center;
+    margin-top: 2em;
+    padding: 0.8em 0;
+    text-align: center;
 }
 
 #share-button span{
-	font-weight: bold;
-	font-size: 1.3em;
-	background: url(../img/icons/share.png) no-repeat;
-	background-size: 22px;
-	padding-left: 30px;
+    font-weight: bold;
+    font-size: 1.3em;
+    background: url(../img/icons/share.png) no-repeat;
+    background-size: 22px;
+    padding-left: 30px;
 }
 
 #bottom-red-message{
-	margin-top: 1em;
-	background-color: #ae1215;
-	color: #fff;
-	font-size: 1.3em;
-	text-align: center;
-	padding: 0.8em 0;
+    margin-top: 1em;
+    background-color: #ae1215;
+    color: #fff;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 0.8em 0;
 }
 
 #bottom-red-message h1{
-	font-weight: bold;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #bottom-red-message h2{
-	margin: 0;
-	font-size: 0.85em;
-	font-weight: normal;
+    margin: 0;
+    font-size: 0.85em;
+    font-weight: normal;
 }
 
 .two-col{
-	width: 100%;
-	overflow: auto;
+    width: 100%;
+    overflow: auto;
 }
 
 .two-col .col{
-	float: left;
-	width: 50%;
+    float: left;
+    width: 50%;
 }
 
 .two-col .col.w30{
-	width: 30% !important;
+    width: 30% !important;
 }
 
 #red{
-	background: #ae1215;
+    background: #ae1215;
 }
 
 .wrapper{
-	padding: 1em 1.5em;
+    padding: 1em 1.5em;
 }
 
 .wrapper h1{
-	color: #fff;
-	font-size: 1.65em;
-	font-weight: bold;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: bold;
 }
 
 .wrapper h1.top-spacer{
-	margin-top: 2.4em;
+    margin-top: 2.4em;
 }
 
 .wrapper .spacer{
-	margin-top: 6em;
-	color: #fff;
+    margin-top: 6em;
+    color: #fff;
 }
 
 .wrapper h2{
-	margin: 0.4em 0 1em;
-	color: #fff;
-	font-weight: normal;
-	font-size: 1.2em;
+    margin: 0.4em 0 1em;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.2em;
 }
 
 hr.white{
-	display: block;
+    display: block;
     border: 0;
-	border-top: 2px solid #fff;
+    border-top: 2px solid #fff;
 }
 
 #today-events-list{
-	color: #fff;
+    color: #fff;
 }
 
 #today-events-list ul{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 #today-events-list ul li{
-	border-bottom: 1px solid #ea6461;
-	padding: 0.8em 0;
+    border-bottom: 1px solid #ea6461;
+    padding: 0.8em 0;
 }
 
 #today-events-list ul li:first-child{
-	padding-top: 0;
+    padding-top: 0;
 }
 
 #today-events-list .small-left{
-	width: 30%;
-	padding-right: 1.6em;
+    width: 30%;
+    padding-right: 1.6em;
 }
 
 #today-events-list .small-left + .col{
-	width: 62%;
+    width: 62%;
 }
 
 #today-events-list .small-left span{
-	font-size: 1.15em;
+    font-size: 1.15em;
 }
 
 #today-events-list ul li h3{
-	margin: 0;
-	font-size: 1.15em;
+    margin: 0;
+    font-size: 1.15em;
 }
 
 #today-events-list ul li p{
-	margin: 0;
-	margin-top: 0.5em;
-	font-size: 1em;
+    margin: 0;
+    margin-top: 0.5em;
+    font-size: 1em;
 }
 
 #today-events-list ul li p.dates{
-	font-style: italic;
+    font-style: italic;
 }
 
-#today-events-tiles{
-	margin-top: 1em;
+#list-tiles{
+    margin-top: 1em;
 }
 
-#today-events-tiles .box{
-	margin-bottom: 1em;
+#list-tiles .box{
+    margin-bottom: 1em;
 }
 
-#today-events-tiles .box:last-child{
-	margin-bottom: 0;
+#list-tiles .box:last-child{
+    margin-bottom: 0;
 }
 
 ul#tickets-main-options{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul#tickets-main-options>li{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.2em;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+ul#tickets-main-options>li:first-child{
+    margin-top: 1em;
+}
+
+ul#tickets-main-options li:last-child{
+    margin-bottom: 1em;
+}
+
+ul#tickets-main-options .detailed-option{
+    display: none;
+    border-bottom: 1px solid #b9b9b9;
+    padding-bottom: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+    overflow: auto;
+}
+
+ul#tickets-main-options .detailed-option h2{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+ul#tickets-main-options .detailed-option ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#tickets-main-options .detailed-option ul li{
+    font-size: 1.15em;
+    line-height: 1.8em
+}
+
+ul#tickets-main-options .detailed-option .circle{
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: #c68889;
+    display: inline-block;
+    margin-right: 0.6em;
+}
+
+ul#tickets-main-options .detailed-option .circle.active{
+    background-color: #6c1a28;
+}
+
+ul#tickets-main-options .detailed-option .circle:last-child{
+    margin-right: 0;
+}
+
+ul#tickets-main-options .chosen-option-calendar{
+    display: none;
+    text-align: center;
+}
+
+.white-container{
+    margin-top: 2em;
+}
+
+.white-container h1{
+    color: #000;
+    font-size: 1.8em;
+}
+
+.white-container p{
+    margin: 0;
+    margin-top: 0.5em;
+    font-size: 1.1em;
+}
+
+.tour-header{
+	height: 400px;
+	position: relative;
+}
+
+.tour-header h1{
+	position: absolute;
+	top: 150px;
+	font-weight: normal;
+}
+
+.tour-header .character{
+	background: url(../img/character.png) no-repeat;
+	background-size: 180px;
+	background-position: right bottom;
+	height: 412px;
+}
+
+ul#tour-questions{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin: 2em 0;
+}
+
+ul#tour-questions li{
 	text-align: center;
 	font-size: 1.2em;
 	font-weight: bold;
@@ -594,61 +699,6 @@ ul#tickets-main-options>li{
 	border-bottom: 1px solid #b9b9b9;
 }
 
-ul#tickets-main-options>li:first-child{
-	margin-top: 1em;
-}
-
-ul#tickets-main-options li:last-child{
-	margin-bottom: 1em;
-}
-
-ul#tickets-main-options .detailed-option{
-	display: none;
-	text-align: center;
-	margin-bottom: 1em;
-	overflow: auto;
-	border-bottom: 1px solid #b9b9b9;
-	padding-bottom: 1.5em;
-}
-
-ul#tickets-main-options .detailed-option h2{
-	color: #000;
-	font-weight: bold;
-	font-size: 1.5em;
-}
-
-ul#tickets-main-options .detailed-option ul{
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-
-ul#tickets-main-options .detailed-option ul li{
-	font-size: 1.15em;
-	line-height: 1.8em
-}
-
-ul#tickets-main-options .detailed-option .circle{
-	border-radius: 50%;
-	width: 6px;
-	height: 6px;
-	background-color: #c68889;
-	display: inline-block;
-	margin-right: 0.6em;
-}
-
-ul#tickets-main-options .detailed-option .circle.active{
-	background-color: #6c1a28;
-}
-
-ul#tickets-main-options .detailed-option .circle:last-child{
-	margin-right: 0;
-}
-
-ul#tickets-main-options .chosen-option-calendar{
-	display: none;
-}
-	
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:300px){
     #top{
@@ -684,23 +734,42 @@ ul#tickets-main-options .chosen-option-calendar{
     }
     
     #profile-options .tile{
-		width: 8em;
+        width: 8em;
+    }
+    
+    #profile-options .tile .photos, #profile-options .tile .threeD, #profile-options .tile .map{
+        background-size: 40px;
+    }
+    
+    .wrapper .spacer{
+        margin-top: 3em;
+    }
+    
+    #list-tiles .box{
+        background-position: 50% !important;
+        margin-bottom: 2em;
+    }
+    
+    ul#tickets-main-options li{
+        font-size: 1.5em;
+    }
+    
+    .white-container h1{
+        font-size: 2em;
+    }
+
+	.tour-header h1{
+		position: absolute;
+		top: 150px;
+		font-weight: normal;
+		font-size: 2.5em;
+	}
+
+	.tour-header .character{
+		background-size: 250px;
 	}
 	
-	#profile-options .tile .photos, #profile-options .tile .threeD, #profile-options .tile .map{
-		background-size: 40px;
-	}
-	
-	.wrapper .spacer{
-		margin-top: 3em;
-	}
-	
-	#today-events-tiles .box{
-		background-position: 50% !important;
-		margin-bottom: 2em;
-	}
-	
-	ul#tickets-main-options li{
+	ul#tour-questions li{
 		font-size: 1.5em;
 	}
 }
