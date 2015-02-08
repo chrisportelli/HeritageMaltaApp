@@ -17,7 +17,7 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-body{
+html, body{
     background-color: #fff;
     -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
@@ -38,7 +38,8 @@ h1{
 
 #top{
     background: url(../img/home.png) no-repeat center top;
-    height: 420px;
+	background-size: cover;
+    height: 60%;
     position: relative;
 }
 
@@ -290,61 +291,174 @@ body.toggled #sidebar{
 
 #profile-title p{
     margin: 0;
-    color: #B9B9B9;
+    color: #b9b9b9;
     font-size: 1.25em;
 }
 
-#profile-image{
-    text-align: center;
+#profile-options{
+	margin: 1em auto;
+	text-align: center;
 }
 
-#profile-options ul{
-    margin: 1em auto;
+#profile-options .tile{
+    background-color: #ae1215;
+    border: 1px solid #ea6461;
+    height: 45px;
+	font-size: 1.2em;
+	display: inline-block;
+	width: 6em;
+}
+
+#profile-options .tile.active{
+    background-color: #fff;
+}
+
+#profile-options .tile.secondary-tile{
+    margin-left: -4px;
+}
+
+#profile-options .tile > div{
+	height: inherit;
+}
+
+#profile-options .tile .photos{
+	background: url(../img/icons/images.png) no-repeat;
+    background-size: 35px;
+	background-position: 50%;
+}
+
+#profile-options .tile .threeD{
+	background: url(../img/icons/3d.png) no-repeat;
+    background-size: 35px;
+	background-position: 50%;
+}
+
+#profile-options .tile .map{
+	background: url(../img/icons/map.png) no-repeat;
+    background-size: 35px;
+	background-position: 50%;
+}
+
+#profile-options .tile span{
+	display: none;
+}
+
+#profile-description hr{
+	border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+	margin: 1.5em 0;
+}
+
+#profile-description{
+	padding: 0 1em;
+}
+
+#profile-description h2{
+	color: #b9b9b9;
+	font-weight: normal;
+	margin-bottom: 0;
+	font-size: 1.25em;
+}
+
+#profile-description p.focus{
+	font-size: 1.4em;
+	margin: 0;
+	margin-top: 0.2em;
+	font-weight: bold;
+}
+
+#profile-description p.content{
+	font-size: 1.2em;
+	line-height: 1.8;
+	margin-top: 1.4em;
+}
+
+#profile-timeline{
+	margin: 1em 0 2em;
+	overflow: auto;
+}
+
+#profile-timeline ul.intervals-header, #profile-timeline ul.intervals {
     list-style-type: none;
     padding: 0;
-    background-color: #ae1215;
-    border: 1px solid #EA6461;
+    display: block;
+	overflow: auto;
 }
 
-#profile-options ul li{
-    display: inline-block;
-    border-right: 1px solid #EA6461;
-    height: 45px;
-}
-
-#profile-options ul li.active{
+#profile-timeline ul.intervals li, #profile-timeline ul.intervals-header li{
     background: #fff;
+    border-right: 1px solid #ccc;
+    color: #999;
+    float: left;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 12px 0;
+    text-align: center;
+    width: 24%;
 }
 
-#profile-options  ul li div{
-    margin: 5px 22px;
-    height: inherit;
-    line-height: 2.9em;
-    color: #fff;
+#profile-timeline ul.intervals{
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
-#profile-options ul li.active div{
-    color: #000;
+#profile-timeline ul.intervals-header{
+	margin: 0;
 }
 
-#profile-options  ul li div.images{
-    background: url(../img/icons/images.png) no-repeat;
-    background-size: 40px;
+#profile-timeline ul.intervals-header li{
+	border-right: 0;
+	padding: 3px 0;
 }
 
-#profile-options  ul li div.threeD{
-    background: url(../img/icons/3d.png) no-repeat;
-    background-size: 40px;
+#profile-timeline ul.intervals li:last-child {
+    border-right: 0;
 }
 
-#profile-options  ul li div.map{
-    background: url(../img/icons/map.png) no-repeat;
-    background-size: 40px;
+#profile-timeline .arrow{
+	width: 0; 
+	height: 0; 
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 12px solid #ae1215;
+	margin: 0 auto;
 }
 
-#profile-options ul li div span{
-    display: none;
-    font-size: 14px;
+#share-button{
+	margin-top: 2em;
+	padding: 0.8em 0;
+	text-align: center;
+}
+
+#share-button span{
+	font-weight: bold;
+	font-size: 1.3em;
+	background: url(../img/icons/share.png) no-repeat;
+	background-size: 22px;
+	padding-left: 30px;
+}
+
+#profile-giftstore{
+	margin-top: 1em;
+	background-color: #ae1215;
+	color: #fff;
+	font-size: 1.3em;
+	text-align: center;
+	padding: 0.8em 0;
+}
+
+.two-col{
+	width: 100%;
+	overflow: auto;
+}
+
+.two-col .col{
+	float: left;
+	width: 50%;
 }
 
 /* Landscape layout (with min-width) */
@@ -381,16 +495,11 @@ body.toggled #sidebar{
         font-size: 1.2em;
     }
     
-    #profile-image-landscape{
-        background-size: auto;
-    }
-    
-    #profile-options ul{
-        width: 50%;
-    }
-    
-    #profile-options ul li div span{
-        padding-left: 3.5em;
-        display: block;
-    }
+    #profile-options .tile{
+		width: 8em;
+	}
+	
+	#profile-options .tile .photos, #profile-options .tile .threeD, #profile-options .tile .map{
+		background-size: 40px;
+	}
 }
