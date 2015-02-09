@@ -4,6 +4,9 @@ $("#nav-toggle").click(function(e){
     //$(this).toggleClass("active");
 });
 
+$('[onclick]').css("cursor", "pointer");
+$("ul#tickets-main-options li:first-child").css("cursor", "pointer");
+
 $("ul#tickets-main-options li").click(function(){
     var a = $(this).attr("rel");
     $("#"+a).slideToggle();
@@ -27,11 +30,12 @@ window.onload = function(){
     img_height = image.height,
     window_height = $(window).height(),
     window_width = $(window).width();
-    if (img_width > window_width){
-        $("#profile-image-landscape").css("width", window_width);
+	//alert(img_width + " " + image.height + " " + $(window).height() + " " + $(window).width());
+    if (img_width >= window_width){
+        $("#profile-image-landscape").css("width", window_width).css("height", img_height).css("background-position", "50%");
     }
     else {
         $("#profile-image-landscape").css("width", img_width).css("margin", "0 auto");
     }
-    $("#profile-image-landscape").css("height", img_height).css("background-position", "50%");
+	$("#profile-image-landscape").css("height", img_height);
 }

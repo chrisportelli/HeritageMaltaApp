@@ -285,6 +285,18 @@ body.toggled #sidebar{
     float: right;
 }
 
+#action-bar .points{
+    margin: 1em;
+    margin-top: 0.7em;
+    float: right;
+    font-size: 1.6em;
+}
+
+#action-bar .points span{
+    font-weight: bold;
+    color: #ae1215;
+}
+
 #profile-title{
     margin: 1em;
     text-align: center;
@@ -292,11 +304,12 @@ body.toggled #sidebar{
 
 #profile-title h1{
     font-weight: bold;
-    font-size: 2.65em;
+    font-size: 2.2em;
 }
 
 #profile-title p{
     margin: 0;
+    margin-top: 0.4em;
     color: #b9b9b9;
     font-size: 1.25em;
 }
@@ -375,6 +388,10 @@ body.toggled #sidebar{
     margin: 0;
     margin-top: 0.2em;
     font-weight: bold;
+}
+
+#profile-description p.focus.small{
+    font-size: 1.1em;
 }
 
 #profile-description p.content{
@@ -628,7 +645,7 @@ ul#tickets-main-options .detailed-option ul li{
     line-height: 1.8em
 }
 
-ul#tickets-main-options .detailed-option .circle{
+.circle{
     border-radius: 50%;
     width: 6px;
     height: 6px;
@@ -637,11 +654,11 @@ ul#tickets-main-options .detailed-option .circle{
     margin-right: 0.6em;
 }
 
-ul#tickets-main-options .detailed-option .circle.active{
+.circle.active{
     background-color: #6c1a28;
 }
 
-ul#tickets-main-options .detailed-option .circle:last-child{
+.circle:last-child{
     margin-right: 0;
 }
 
@@ -666,37 +683,68 @@ ul#tickets-main-options .chosen-option-calendar{
 }
 
 .tour-header{
-	height: 400px;
-	position: relative;
+    margin-top: 3em;
+    height: 325px;
+    position: relative;
 }
 
 .tour-header h1{
-	position: absolute;
-	top: 150px;
-	font-weight: normal;
+    position: absolute;
+    top: 90px;
+    font-weight: normal;
 }
 
 .tour-header .character{
-	background: url(../img/character.png) no-repeat;
-	background-size: 180px;
-	background-position: right bottom;
-	height: 412px;
+    background: url(../img/character.png) no-repeat;
+    background-size: 190px;
+    background-position: right bottom;
+    height: 337px;
 }
 
 ul#tour-questions{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	margin: 2em 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 2em 0;
 }
 
 ul#tour-questions li{
-	text-align: center;
-	font-size: 1.2em;
-	font-weight: bold;
-	padding-bottom: 0.5em;
-	margin-bottom: 1.2em;
-	border-bottom: 1px solid #b9b9b9;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.2em;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+#temples-background{
+    background: url(../img/timeline.png) no-repeat;
+    /*background-size: cover;*/
+    height: 80%;
+}
+
+#big-center-header{
+    text-align: center;
+    margin: 6em 0;
+}
+
+#big-center-header h1{
+    font-weight: bold;
+    font-size: 2.4em;
+    color: #ae1215;
+}
+
+#big-center-header .circle{
+    margin-top: 4em;
+}
+
+h1.found{
+    text-align: center;
+    border-bottom: 1px solid #b2b2b2;
+    color: #000;
+    font-size: 2.5em;
+    padding-bottom: 0.3em;
+    font-weight: normal;
 }
 
 /* Landscape layout (with min-width) */
@@ -758,18 +806,43 @@ ul#tour-questions li{
         font-size: 2em;
     }
 
-	.tour-header h1{
-		position: absolute;
-		top: 150px;
-		font-weight: normal;
-		font-size: 2.5em;
-	}
+    .tour-header h1{
+        position: absolute;
+        top: 150px;
+        font-weight: normal;
+        font-size: 2.5em;
+    }
 
-	.tour-header .character{
-		background-size: 250px;
-	}
+    .tour-header .character{
+        background-size: 250px;
+    }
 	
-	ul#tour-questions li{
-		font-size: 1.5em;
+	#profile-options .tile.secondary-tile {
+		margin-left: -5px;
 	}
+    
+    .circle{
+        width: 10px;
+        height: 10px;
+    }
+    
+    ul#tour-questions li{
+        font-size: 1.5em;
+    }
+    
+    #profile-title h1{
+        font-size: 2.65em;
+    }
+    
+    #big-center-header{
+        margin: 8.5em 0;
+    }
+    
+    #big-center-header h1{
+        font-size: 2.8em;
+    }
+    
+    #big-center-header .circle{
+        margin-top: 5em;
+    }
 }
