@@ -319,6 +319,11 @@ body.toggled #sidebar{
     text-align: center;
 }
 
+#profile-options.timeline{
+	margin: 0;
+	float: right;
+}
+
 #profile-options .tile{
     background-color: #ae1215;
     border: 1px solid #ea6461;
@@ -328,12 +333,24 @@ body.toggled #sidebar{
     width: 6em;
 }
 
+#profile-options.timeline .tile{
+	display: block;
+}
+
+#profile-options.timeline .tile.secondary-tile{
+	margin: 0;
+}
+
 #profile-options .tile.active{
     background-color: #fff;
 }
 
 #profile-options .tile.secondary-tile{
     margin-left: -4px;
+}
+
+#profile-options.timeline .tile.secondary-tile{
+	margin-top: -1px;
 }
 
 #profile-options .tile > div{
@@ -400,19 +417,24 @@ body.toggled #sidebar{
     margin-top: 1.4em;
 }
 
-#profile-timeline{
+#timeline{
     margin: 1em 0 2em;
     overflow: auto;
 }
 
-#profile-timeline ul.intervals-header, #profile-timeline ul.intervals {
+#timeline.main-timeline{
+	margin-bottom: 0;
+	background: #ae1215;
+}
+
+#timeline ul.intervals-header, #timeline ul.intervals {
     list-style-type: none;
     padding: 0;
     display: block;
     overflow: auto;
 }
 
-#profile-timeline ul.intervals li, #profile-timeline ul.intervals-header li{
+#timeline ul.intervals li, #timeline ul.intervals-header li{
     background: #fff;
     border-right: 1px solid #ccc;
     color: #999;
@@ -424,31 +446,44 @@ body.toggled #sidebar{
     width: 24%;
 }
 
-#profile-timeline ul.intervals{
+#timeline.main-timeline ul.intervals li, #timeline.main-timeline ul.intervals-header li{
+	color: #fff;
+	background: #ae1215;
+}
+
+#timeline ul.intervals{
     margin-top: 0;
     margin-bottom: 0;
 }
 
-#profile-timeline ul.intervals-header{
+#timeline.main-timeline ul.intervals{
+	margin-bottom: 2em;
+}
+
+#timeline ul.intervals-header{
     margin: 0;
 }
 
-#profile-timeline ul.intervals-header li{
+#timeline ul.intervals-header li{
     border-right: 0;
     padding: 3px 0;
 }
 
-#profile-timeline ul.intervals li:last-child {
+#timeline ul.intervals li:last-child {
     border-right: 0;
 }
 
-#profile-timeline .arrow{
+#timeline .arrow{
     width: 0; 
     height: 0; 
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-top: 12px solid #ae1215;
     margin: 0 auto;
+}
+
+#timeline.main-timeline .arrow{
+    border-top: 12px solid #fff;
 }
 
 #share-button{
@@ -719,7 +754,7 @@ ul#tour-questions li{
 
 #temples-background{
     background: url(../img/timeline.png) no-repeat;
-    /*background-size: cover;*/
+    background-size: 100% 160%;
     height: 80%;
 }
 
