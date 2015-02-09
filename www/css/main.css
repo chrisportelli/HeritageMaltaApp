@@ -320,8 +320,8 @@ body.toggled #sidebar{
 }
 
 #profile-options.timeline{
-	margin: 0;
-	float: right;
+    margin: 0;
+    float: right;
 }
 
 #profile-options .tile{
@@ -334,11 +334,11 @@ body.toggled #sidebar{
 }
 
 #profile-options.timeline .tile{
-	display: block;
+    display: block;
 }
 
 #profile-options.timeline .tile.secondary-tile{
-	margin: 0;
+    margin: 0;
 }
 
 #profile-options .tile.active{
@@ -350,7 +350,7 @@ body.toggled #sidebar{
 }
 
 #profile-options.timeline .tile.secondary-tile{
-	margin-top: -1px;
+    margin-top: -1px;
 }
 
 #profile-options .tile > div{
@@ -423,8 +423,8 @@ body.toggled #sidebar{
 }
 
 #timeline.main-timeline{
-	margin-bottom: 0;
-	background: #ae1215;
+    margin-bottom: 0;
+    background: #ae1215;
 }
 
 #timeline ul.intervals-header, #timeline ul.intervals {
@@ -447,8 +447,8 @@ body.toggled #sidebar{
 }
 
 #timeline.main-timeline ul.intervals li, #timeline.main-timeline ul.intervals-header li{
-	color: #fff;
-	background: #ae1215;
+    color: #fff;
+    background: #ae1215;
 }
 
 #timeline ul.intervals{
@@ -457,7 +457,7 @@ body.toggled #sidebar{
 }
 
 #timeline.main-timeline ul.intervals{
-	margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 #timeline ul.intervals-header{
@@ -724,16 +724,46 @@ ul#tickets-main-options .chosen-option-calendar{
 }
 
 .tour-header h1{
-    position: absolute;
-    top: 90px;
     font-weight: normal;
+    font-size: 1.1em;
+    margin-top: 4.2em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #fff;
+}
+
+.tour-header p{
+    color: #fff;
+    font-size: 1.4em;
 }
 
 .tour-header .character{
-    background: url(../img/character.png) no-repeat;
-    background-size: 190px;
-    background-position: right bottom;
-    height: 337px;
+    position: absolute;
+    bottom: -16px;
+    right: 0;
+    margin-left: 2em;
+}
+
+.tour-header .character img{
+    height: 152px;
+}
+
+.tour-header .bottom-question{
+    position: absolute;
+    bottom: 0;
+}
+
+.tour-header .bottom-question p.small{
+    font-size: 1em;
+}
+
+.tour-header .bottom-question .artifact-link{
+    font-size: 1.4em;
+    color: #000;
+    padding: 5px 10px;
+    background: #fff;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
 }
 
 ul#tour-questions{
@@ -842,19 +872,28 @@ h1.found{
     }
 
     .tour-header h1{
-        position: absolute;
-        top: 150px;
-        font-weight: normal;
-        font-size: 2.5em;
+        font-size: 1.4em;
+    }
+    
+    .tour-header .bottom-question p.small{
+        font-size: 1.2em;
+    }
+    
+    .tour-header .bottom-question .artifact-link{
+        font-size: 1.6em;
+    }
+    
+    .tour-header .character{
+        margin-left: 4em;
     }
 
-    .tour-header .character{
-        background-size: 250px;
+    .tour-header .character img{
+        height: 250px;
     }
-	
-	#profile-options .tile.secondary-tile {
-		margin-left: -5px;
-	}
+    
+    #profile-options .tile.secondary-tile {
+        margin-left: -5px;
+    }
     
     .circle{
         width: 10px;
