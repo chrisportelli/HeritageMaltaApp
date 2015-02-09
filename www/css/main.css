@@ -68,7 +68,8 @@ h1{
 
 .box{
     margin-right: 2em;
-    color: #fff;
+    /*margin-bottom: 1em;
+    */color: #fff;
     display: inline-block;
     width: 14em;
     height: 14em;

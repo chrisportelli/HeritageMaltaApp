@@ -30,7 +30,7 @@ window.onload = function(){
     img_height = image.height,
     window_height = $(window).height(),
     window_width = $(window).width();
-	//alert(img_width + " " + image.height + " " + $(window).height() + " " + $(window).width());
+	//alert(img_width + " " + img_height + " " + $(window).height() + " " + $(window).width());
     if (img_width >= window_width){
         $("#profile-image-landscape").css("width", window_width).css("height", img_height).css("background-position", "50%");
     }
