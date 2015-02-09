@@ -717,6 +717,14 @@ ul#tickets-main-options .chosen-option-calendar{
     font-size: 1.1em;
 }
 
+.white-container .gallery{
+    margin-top: 1em;
+}
+
+.white-container .gallery img{
+    margin-bottom: 0.4em;
+}
+
 .tour-header{
     margin-top: 3em;
     height: 325px;
