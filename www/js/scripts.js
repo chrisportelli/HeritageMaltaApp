@@ -29,8 +29,8 @@ $("#tour-transcript").click(function(){
 });
 
 $("#tour-audio").click(function(){
-	$("#tour-single-artifact-front").hide();
-	$("#tour-audio-guide").show();
+    $("#tour-single-artifact-front").hide();
+    $("#tour-audio-guide").show();
 });
 
 $("#tour-single-artifact-details p.main-link").click(function(){
