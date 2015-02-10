@@ -1,9 +1,3 @@
-var size = [window.width,window.height];
-
-$(window).resize(function(){
-    window.resizeTo(size[0],size[1]);
-});
-
 $("#nav-toggle").click(function(e){
     e.preventDefault();
     $("body").toggleClass("toggled");
@@ -11,7 +5,7 @@ $("#nav-toggle").click(function(e){
 });
 
 $('[onclick]').css("cursor", "pointer");
-$("ul#tickets-main-options li:first-child, #contact-opt, #language-opt, .full-content .close").css("cursor", "pointer");
+$("ul#tickets-main-options li:first-child, #contact-opt, #language-opt, #tour-transcript, #tour-audio, .full-content .close, #tour-single-artifact-details p.main-link").css("cursor", "pointer");
 
 $("ul#tickets-main-options li").click(function(){
     var a = $(this).attr("rel");
@@ -27,6 +21,20 @@ $("#contact-opt, #language-opt").click(function(){
 $(".full-content .close").click(function(){
     var a = $(this).closest(".full-container").attr("id");
     $("#"+a).hide();
+});
+
+$("#tour-transcript").click(function(){
+    $("#tour-single-artifact-front").hide();
+    $("#tour-single-artifact-details").show();
+});
+
+$("#tour-audio").click(function(){
+	$("#tour-single-artifact-front").hide();
+	$("#tour-audio-guide").show();
+});
+
+$("#tour-single-artifact-details p.main-link").click(function(){
+    $("#tour-single-artifact-details").hide();
 });
 
 window.onload = function(){
