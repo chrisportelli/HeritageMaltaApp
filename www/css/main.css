@@ -81,12 +81,7 @@ h1{
     height: 100%;
     /*background: rgba(0,0,0,0.3);*/
     position: relative;
-    background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
-    background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-    background: -o-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-    background: -ms-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-    background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65098) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .box .text{
@@ -118,6 +113,16 @@ h1{
 
 #menu-slider .box.timeline{
     background: url(../img/timeline.png) no-repeat;
+    background-size: cover;
+}
+
+#menu-slider .box.games{
+    background: url(../img/games.png) no-repeat;
+    background-size: cover;
+}
+
+#menu-slider .box.tour{
+    background: url(../img/history_temples.png) no-repeat;
     background-size: cover;
 }
 
@@ -259,7 +264,6 @@ body.toggled #nav-toggle{
 body.toggled #sidebar{
     width: 250px;
 }
-
 
 /* PROFILE */
 #action-bar{
@@ -819,6 +823,65 @@ h1.found{
     font-size: 2.5em;
     padding-bottom: 0.3em;
     font-weight: normal;
+}
+
+.full-container{
+    z-index: 2000;
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    left: 50%;
+    margin: 2em 0 0 -45%;
+    display: none;
+}
+
+.full-container .full-content{
+    text-align: center;
+    width: 95%;
+    height: 100%;
+    padding: 5px;
+    background:#fff;
+    -webkit-box-shadow: 1px 2px 6px #888;
+    -moz-box-shadow: 1px 2px 6px #888;
+    box-shadow: 1px 2px 6px #888;
+    position: relative;
+}
+
+.full-container .close{
+    background: url(../img/icons/cross_1.png) no-repeat;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    margin: 1em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.full-container img.top-image{
+    margin: 3em 0 2em;
+}
+
+.full-container p{
+    font-size: 1.35em;
+}
+
+.full-container p.liners{
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+.full-container .wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.full-container p.small{
+    font-size: 1.25em;
+}
+
+#contact-us p.liners:last-child{
+    border-bottom: none;
 }
 
 /* Landscape layout (with min-width) */
